@@ -13,13 +13,15 @@ class HomeCell: UICollectionViewCell {
     @IBOutlet weak var cellImage: UIImageView!
     @IBOutlet weak var cellLabel: UILabel!
     
+    @IBOutlet weak var cellView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
+    func populateCell() {
+        cellView.dropShadow(color: .black, opacity: 0.5, offSet: .zero, radius: 8, scale: true)
+    }
     
-    
-
 }
