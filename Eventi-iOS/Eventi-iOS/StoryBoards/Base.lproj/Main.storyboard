@@ -20,6 +20,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dT4-Fo-tBe">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="179"/>
+                                <color key="backgroundColor" red="0.20150929966704723" green="0.027088346139575149" blue="0.70239133883248739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xN3-tQ-RFg">
                                 <rect key="frame" x="0.0" y="179" width="414" height="683"/>
