@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SpeakersCell" rowHeight="80" id="KGk-i7-Jjw" customClass="SpeakersCell" customModule="Eventi_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="510" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="510" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="superman" translatesAutoresizingMaskIntoConstraints="NO" id="pbO-Y8-MQ4">
+                        <rect key="frame" x="8" y="15" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="byV-yr-SH1"/>
+                            <constraint firstAttribute="width" constant="50" id="wsO-A5-jVG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pE3-Hx-Z7T">
+                        <rect key="frame" x="66" y="8" width="436" height="63.5"/>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pE3-Hx-Z7T" secondAttribute="trailing" constant="8" id="1eL-TW-Rem"/>
+                    <constraint firstItem="pbO-Y8-MQ4" firstAttribute="centerY" secondItem="pE3-Hx-Z7T" secondAttribute="centerY" id="5se-4d-37V"/>
+                    <constraint firstItem="pE3-Hx-Z7T" firstAttribute="leading" secondItem="pbO-Y8-MQ4" secondAttribute="trailing" constant="8" id="CzJ-iy-gtj"/>
+                    <constraint firstItem="pbO-Y8-MQ4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="IH1-bT-z4A"/>
+                    <constraint firstAttribute="bottom" secondItem="pE3-Hx-Z7T" secondAttribute="bottom" constant="8" id="QzD-rn-TbJ"/>
+                    <constraint firstItem="pE3-Hx-Z7T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="haB-WR-Bwv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="speakerImg" destination="pbO-Y8-MQ4" id="N0N-P8-yWv"/>
+                <outlet property="speakerLabel" destination="pE3-Hx-Z7T" id="imr-X6-CHN"/>
+            </connections>
+            <point key="canvasLocation" x="105.79710144927537" y="99.776785714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="superman" width="960" height="639"/>
+    </resources>
+</document>

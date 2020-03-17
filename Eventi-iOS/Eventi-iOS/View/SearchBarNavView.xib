@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchBarNavView" customModule="Eventi_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="bhz-08-nNb" id="NdM-MK-W2u"/>
+                <outlet property="titleLabel" destination="WN5-fL-Iyk" id="RB4-p6-6zM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="143"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Enter username" translatesAutoresizingMaskIntoConstraints="NO" id="bhz-08-nNb">
+                    <rect key="frame" x="8" y="59" width="398" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Dgw-GK-WLQ"/>
+                    </constraints>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WN5-fL-Iyk">
+                    <rect key="frame" x="190.5" y="12" width="33.5" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3X-OS-xEc">
+                    <rect key="frame" x="12" y="14.5" width="34" height="30"/>
+                    <state key="normal" title="Back"/>
+                    <connections>
+                        <action selector="btnBack:" destination="-1" eventType="touchUpInside" id="Ud3-JZ-hfU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WN5-fL-Iyk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2V2-x5-EX1"/>
+                <constraint firstItem="K3X-OS-xEc" firstAttribute="centerY" secondItem="WN5-fL-Iyk" secondAttribute="centerY" id="C6s-oA-fLF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bhz-08-nNb" secondAttribute="bottom" id="IbC-x4-0ga"/>
+                <constraint firstItem="K3X-OS-xEc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="OSa-15-AOW"/>
+                <constraint firstItem="bhz-08-nNb" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-8" id="aWo-0h-heV"/>
+                <constraint firstItem="bhz-08-nNb" firstAttribute="top" secondItem="WN5-fL-Iyk" secondAttribute="bottom" constant="12" id="h8X-w6-Xxb"/>
+                <constraint firstItem="bhz-08-nNb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="j4n-CN-6hJ"/>
+                <constraint firstItem="WN5-fL-Iyk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="rqD-AQ-L6W"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="86.71875"/>
+        </view>
+    </objects>
+</document>
