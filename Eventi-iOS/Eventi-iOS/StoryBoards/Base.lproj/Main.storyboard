@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="erx-cy-O5B">
-    <device id="retina6_1" orientation="portrait">
+
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="egS-Ja-Z98">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -115,17 +116,17 @@
             <objects>
                 <viewController id="egS-Ja-Z98" customClass="VCSpeakerDetails" customModule="Eventi_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oRx-zp-BLV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sCg-Jh-cT0">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="sCg-Jh-cT0" firstAttribute="top" secondItem="whl-2k-AV8" secondAttribute="top" id="3H7-jt-H4U"/>
+                            <constraint firstItem="sCg-Jh-cT0" firstAttribute="top" secondItem="whl-2k-AV8" secondAttribute="top" id="RAw-p9-SZB"/>
                             <constraint firstItem="sCg-Jh-cT0" firstAttribute="leading" secondItem="whl-2k-AV8" secondAttribute="leading" id="bam-9S-zIc"/>
                             <constraint firstItem="whl-2k-AV8" firstAttribute="trailing" secondItem="sCg-Jh-cT0" secondAttribute="trailing" id="eZL-JJ-aLl"/>
                             <constraint firstItem="whl-2k-AV8" firstAttribute="bottom" secondItem="sCg-Jh-cT0" secondAttribute="bottom" id="rQi-c7-A5S"/>
@@ -140,12 +141,52 @@
             </objects>
             <point key="canvasLocation" x="1797" y="179"/>
         </scene>
+        <!--Speakers-->
+        <scene sceneID="vSi-JK-wgU">
+            <objects>
+                <viewController storyboardIdentifier="VCSpeakers" id="g0O-I4-zfc" customClass="VCSpeakers" customModule="Eventi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="STv-lA-ZLs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lwp-uk-Est" customClass="SearchBarNavView" customModule="Eventi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="19.999999999999993" width="414" height="110.33333333333331"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NTG-78-Hoi">
+                                <rect key="frame" x="0.0" y="130.33333333333331" width="414" height="605.66666666666674"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+
+                        <constraints>
+                            <constraint firstItem="NTG-78-Hoi" firstAttribute="top" secondItem="Lwp-uk-Est" secondAttribute="bottom" id="BlK-FI-nOH"/>
+                            <constraint firstItem="Lwp-uk-Est" firstAttribute="top" secondItem="STv-lA-ZLs" secondAttribute="top" constant="20" id="Bxj-wP-Yr6"/>
+                            <constraint firstItem="Lwp-uk-Est" firstAttribute="height" secondItem="STv-lA-ZLs" secondAttribute="height" multiplier="0.15" id="HdV-ja-XfY"/>
+                            <constraint firstItem="Lwp-uk-Est" firstAttribute="leading" secondItem="Gho-hC-9h3" secondAttribute="leading" id="R1w-43-hdB"/>
+                            <constraint firstItem="Gho-hC-9h3" firstAttribute="trailing" secondItem="NTG-78-Hoi" secondAttribute="trailing" id="bZd-07-JUz"/>
+                            <constraint firstItem="Gho-hC-9h3" firstAttribute="trailing" secondItem="Lwp-uk-Est" secondAttribute="trailing" id="dU0-Zb-qV1"/>
+                            <constraint firstItem="NTG-78-Hoi" firstAttribute="leading" secondItem="Gho-hC-9h3" secondAttribute="leading" id="lWP-ZW-Hym"/>
+                            <constraint firstItem="Gho-hC-9h3" firstAttribute="bottom" secondItem="NTG-78-Hoi" secondAttribute="bottom" id="mwV-aL-xL4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gho-hC-9h3"/>
+                    </view>
+                    <connections>
+                        <outlet property="navigationView" destination="Lwp-uk-Est" id="HhO-yd-kQV"/>
+                        <outlet property="tableView" destination="NTG-78-Hoi" id="1CY-5V-dVW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPS-H8-WSp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1461" y="926"/>
+        </scene>
         <!--Program-->
         <scene sceneID="51L-e4-pAf">
             <objects>
                 <viewController id="bLT-H4-C99" customClass="VCProgram" customModule="Eventi_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zDv-Gq-YhA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hnV-VR-UZ6"/>
@@ -153,7 +194,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGT-ov-NWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2726" y="179"/>
+
+            <point key="canvasLocation" x="3477" y="179"/>
+        </scene>
+        <!--Exhibitors-->
+        <scene sceneID="1iR-Uq-ANX">
+            <objects>
+                <viewController storyboardIdentifier="VCExhibitors" id="Ptf-3H-p3i" customClass="VCExhibitors" customModule="Eventi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tuV-dw-r0i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZC-cD-y1x" customClass="SearchBarNavView" customModule="Eventi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="19.999999999999993" width="414" height="110.33333333333331"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SIc-4b-dri">
+                                <rect key="frame" x="0.0" y="130.33333333333331" width="414" height="605.66666666666674"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FDM-0s-dUY" firstAttribute="trailing" secondItem="HZC-cD-y1x" secondAttribute="trailing" id="1mm-gK-Sdc"/>
+                            <constraint firstItem="FDM-0s-dUY" firstAttribute="bottom" secondItem="SIc-4b-dri" secondAttribute="bottom" id="AoJ-xx-fUU"/>
+                            <constraint firstItem="HZC-cD-y1x" firstAttribute="leading" secondItem="FDM-0s-dUY" secondAttribute="leading" id="POR-gR-3yC"/>
+                            <constraint firstItem="SIc-4b-dri" firstAttribute="leading" secondItem="FDM-0s-dUY" secondAttribute="leading" id="TVy-xQ-lRx"/>
+                            <constraint firstItem="FDM-0s-dUY" firstAttribute="trailing" secondItem="SIc-4b-dri" secondAttribute="trailing" id="TeH-0K-Pfc"/>
+                            <constraint firstItem="HZC-cD-y1x" firstAttribute="top" secondItem="FDM-0s-dUY" secondAttribute="top" id="W3p-gR-tuc"/>
+                            <constraint firstItem="HZC-cD-y1x" firstAttribute="height" secondItem="tuV-dw-r0i" secondAttribute="height" multiplier="0.15" id="adu-os-kEN"/>
+                            <constraint firstItem="SIc-4b-dri" firstAttribute="top" secondItem="HZC-cD-y1x" secondAttribute="bottom" id="k4h-gt-fwL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FDM-0s-dUY"/>
+                    </view>
+                    <connections>
+                        <outlet property="navView" destination="HZC-cD-y1x" id="wPb-Bs-IvX"/>
+                        <outlet property="tableView" destination="SIc-4b-dri" id="oFw-eb-1qP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Flo-NR-XDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606" y="179"/>
         </scene>
     </scenes>
 </document>
