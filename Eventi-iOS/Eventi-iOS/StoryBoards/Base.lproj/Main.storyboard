@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ptf-3H-p3i">
-    <device id="retina5_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="erx-cy-O5B">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,15 +15,15 @@
             <objects>
                 <viewController storyboardIdentifier="HomeController" id="BYZ-38-t0r" customClass="HomeController" customModule="Eventi_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dT4-Fo-tBe">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="147.33333333333334"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="179"/>
                                 <color key="backgroundColor" red="0.20150929966704723" green="0.027088346139575149" blue="0.70239133883248739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xN3-tQ-RFg">
-                                <rect key="frame" x="0.0" y="147.33333333333331" width="414" height="588.66666666666674"/>
+                                <rect key="frame" x="0.0" y="179" width="414" height="683"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wAk-4f-8NI">
                                     <size key="itemSize" width="50" height="50"/>
@@ -69,14 +69,14 @@
             <objects>
                 <viewController id="erx-cy-O5B" customClass="VCProgramDetails" customModule="Eventi_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mMW-ef-ffn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8RG-KI-xKY">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o5g-rn-aWA">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="dataSource" destination="erx-cy-O5B" id="FvH-px-eA9"/>
@@ -110,7 +110,6 @@
             </objects>
             <point key="canvasLocation" x="775" y="179"/>
         </scene>
-
         <!--Speaker Details-->
         <scene sceneID="7iw-V0-mPQ">
             <objects>
@@ -122,22 +121,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sCg-Jh-cT0">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-
-        <!--Speakers-->
-        <scene sceneID="vSi-JK-wgU">
-            <objects>
-                <viewController storyboardIdentifier="VCSpeakers" id="g0O-I4-zfc" customClass="VCSpeakers" customModule="Eventi_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="STv-lA-ZLs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lwp-uk-Est" customClass="SearchBarNavView" customModule="Eventi_iOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="19.999999999999993" width="414" height="110.33333333333331"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NTG-78-Hoi">
-                                <rect key="frame" x="0.0" y="130.33333333333331" width="414" height="605.66666666666674"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -171,64 +154,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGT-ov-NWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2726" y="179"/>
-                            <constraint firstItem="NTG-78-Hoi" firstAttribute="top" secondItem="Lwp-uk-Est" secondAttribute="bottom" id="BlK-FI-nOH"/>
-                            <constraint firstItem="Lwp-uk-Est" firstAttribute="top" secondItem="STv-lA-ZLs" secondAttribute="top" constant="20" id="Bxj-wP-Yr6"/>
-                            <constraint firstItem="Lwp-uk-Est" firstAttribute="height" secondItem="STv-lA-ZLs" secondAttribute="height" multiplier="0.15" id="HdV-ja-XfY"/>
-                            <constraint firstItem="Lwp-uk-Est" firstAttribute="leading" secondItem="Gho-hC-9h3" secondAttribute="leading" id="R1w-43-hdB"/>
-                            <constraint firstItem="Gho-hC-9h3" firstAttribute="trailing" secondItem="NTG-78-Hoi" secondAttribute="trailing" id="bZd-07-JUz"/>
-                            <constraint firstItem="Gho-hC-9h3" firstAttribute="trailing" secondItem="Lwp-uk-Est" secondAttribute="trailing" id="dU0-Zb-qV1"/>
-                            <constraint firstItem="NTG-78-Hoi" firstAttribute="leading" secondItem="Gho-hC-9h3" secondAttribute="leading" id="lWP-ZW-Hym"/>
-                            <constraint firstItem="Gho-hC-9h3" firstAttribute="bottom" secondItem="NTG-78-Hoi" secondAttribute="bottom" id="mwV-aL-xL4"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Gho-hC-9h3"/>
-                    </view>
-                    <connections>
-                        <outlet property="navigationView" destination="Lwp-uk-Est" id="HhO-yd-kQV"/>
-                        <outlet property="tableView" destination="NTG-78-Hoi" id="1CY-5V-dVW"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hPS-H8-WSp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1752" y="179"/>
-        </scene>
-        <!--Exhibitors-->
-        <scene sceneID="1iR-Uq-ANX">
-            <objects>
-                <viewController storyboardIdentifier="VCExhibitors" id="Ptf-3H-p3i" customClass="VCExhibitors" customModule="Eventi_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tuV-dw-r0i">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZC-cD-y1x" customClass="SearchBarNavView" customModule="Eventi_iOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="19.999999999999993" width="414" height="110.33333333333331"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SIc-4b-dri">
-                                <rect key="frame" x="0.0" y="130.33333333333331" width="414" height="605.66666666666674"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="FDM-0s-dUY" firstAttribute="trailing" secondItem="HZC-cD-y1x" secondAttribute="trailing" id="1mm-gK-Sdc"/>
-                            <constraint firstItem="FDM-0s-dUY" firstAttribute="bottom" secondItem="SIc-4b-dri" secondAttribute="bottom" id="AoJ-xx-fUU"/>
-                            <constraint firstItem="HZC-cD-y1x" firstAttribute="leading" secondItem="FDM-0s-dUY" secondAttribute="leading" id="POR-gR-3yC"/>
-                            <constraint firstItem="SIc-4b-dri" firstAttribute="leading" secondItem="FDM-0s-dUY" secondAttribute="leading" id="TVy-xQ-lRx"/>
-                            <constraint firstItem="FDM-0s-dUY" firstAttribute="trailing" secondItem="SIc-4b-dri" secondAttribute="trailing" id="TeH-0K-Pfc"/>
-                            <constraint firstItem="HZC-cD-y1x" firstAttribute="top" secondItem="FDM-0s-dUY" secondAttribute="top" id="W3p-gR-tuc"/>
-                            <constraint firstItem="HZC-cD-y1x" firstAttribute="height" secondItem="tuV-dw-r0i" secondAttribute="height" multiplier="0.15" id="adu-os-kEN"/>
-                            <constraint firstItem="SIc-4b-dri" firstAttribute="top" secondItem="HZC-cD-y1x" secondAttribute="bottom" id="k4h-gt-fwL"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="FDM-0s-dUY"/>
-                    </view>
-                    <connections>
-                        <outlet property="navView" destination="HZC-cD-y1x" id="wPb-Bs-IvX"/>
-                        <outlet property="tableView" destination="SIc-4b-dri" id="oFw-eb-1qP"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Flo-NR-XDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2572" y="178"/>
         </scene>
     </scenes>
 </document>
