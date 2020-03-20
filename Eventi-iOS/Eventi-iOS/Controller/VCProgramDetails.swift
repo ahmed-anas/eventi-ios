@@ -23,8 +23,8 @@ class VCProgramDetails: UIViewController {
 
         // Do any additional setup after loading the view.
         setupView()
-        programDetailTblView.estimatedRowHeight = 600
-        programDetailTblView.rowHeight = UITableView.automaticDimension
+//        programDetailTblView.estimatedRowHeight = 600
+//        programDetailTblView.rowHeight = UITableView.automaticDimension
     }
     
     fileprivate func setupView () {
@@ -40,6 +40,7 @@ class VCProgramDetails: UIViewController {
         let attendeesNibName = UINib(nibName: attendeesIdentifier, bundle: nil)
         programDetailTblView.register(attendeesNibName, forCellReuseIdentifier: attendeesIdentifier)
         
+        
 //        programDetailTblView.estimatedRowHeight = 50
 //        programDetailTblView.rowHeight  = UITableView.automaticDimension
     }
@@ -52,10 +53,6 @@ extension VCProgramDetails : UITableViewDataSource , UITableViewDelegate , SeeMo
         programDetailTblView.beginUpdates()
         programDetailTblView.endUpdates()
     }
-    
-    
-    
-   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }

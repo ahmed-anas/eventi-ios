@@ -110,5 +110,50 @@
             </objects>
             <point key="canvasLocation" x="775" y="179"/>
         </scene>
+        <!--Speaker Details-->
+        <scene sceneID="7iw-V0-mPQ">
+            <objects>
+                <viewController id="egS-Ja-Z98" customClass="VCSpeakerDetails" customModule="Eventi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oRx-zp-BLV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sCg-Jh-cT0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sCg-Jh-cT0" firstAttribute="top" secondItem="whl-2k-AV8" secondAttribute="top" id="3H7-jt-H4U"/>
+                            <constraint firstItem="sCg-Jh-cT0" firstAttribute="leading" secondItem="whl-2k-AV8" secondAttribute="leading" id="bam-9S-zIc"/>
+                            <constraint firstItem="whl-2k-AV8" firstAttribute="trailing" secondItem="sCg-Jh-cT0" secondAttribute="trailing" id="eZL-JJ-aLl"/>
+                            <constraint firstItem="whl-2k-AV8" firstAttribute="bottom" secondItem="sCg-Jh-cT0" secondAttribute="bottom" id="rQi-c7-A5S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="whl-2k-AV8"/>
+                    </view>
+                    <connections>
+                        <outlet property="speakerTblView" destination="sCg-Jh-cT0" id="npK-Of-pOM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hoe-Is-nai" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797" y="179"/>
+        </scene>
+        <!--Program-->
+        <scene sceneID="51L-e4-pAf">
+            <objects>
+                <viewController id="bLT-H4-C99" customClass="VCProgram" customModule="Eventi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zDv-Gq-YhA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hnV-VR-UZ6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MGT-ov-NWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2726" y="179"/>
+        </scene>
     </scenes>
 </document>

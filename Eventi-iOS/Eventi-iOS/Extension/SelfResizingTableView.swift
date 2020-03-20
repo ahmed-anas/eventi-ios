@@ -10,16 +10,26 @@ import UIKit
 
 class SelfResizingTableView: UITableView {
     
+//    override var contentSize:CGSize {
+//        didSet {
+//            invalidateIntrinsicContentSize()
+//        }
+//    }
+//    override var intrinsicContentSize: CGSize {
+//        layoutIfNeeded()
+//        return CGSize(width: UIView.noIntrinsicMetric, height: contentSize.height)
+//    }
+    
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         defaultInit()
     }
-    
+
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         defaultInit()
     }
-    
+
     func defaultInit(){
         self.keyboardDismissMode = .onDrag
         self.showsVerticalScrollIndicator = false
@@ -29,10 +39,10 @@ class SelfResizingTableView: UITableView {
         self.sectionFooterHeight = 0
         self.sectionHeaderHeight = 0
     }
-    
+
     override open func layoutSubviews() {
         super.layoutSubviews()
-        
+
         if self.nsHeightConstraint != nil {
             self.nsHeightConstraint?.constant = self.contentSize.height
         }
@@ -56,11 +66,11 @@ extension UITableView {
 //        fatalError(String(describing: cell.self))
 //    }
 //    
-//    func registerNib(_ cellClass: UITableViewCell.Type) {
-//        let id = String(describing: cellClass.self)
-//        let nib = UINib(nibName: id, bundle: nil)
-//        register(nib, forCellReuseIdentifier: id)
-//    }
+    func registerNib(_ cellClass: UITableViewCell.Type) {
+        let id = String(describing: cellClass.self)
+        let nib = UINib(nibName: id, bundle: nil)
+        register(nib, forCellReuseIdentifier: id)
+    }
 }
 
 extension UIView {

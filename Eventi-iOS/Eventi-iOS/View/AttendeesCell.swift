@@ -33,7 +33,7 @@ class AttendeesCell: UITableViewCell {
         let speakerNibname = UINib(nibName: speakerCellIdentifier, bundle: nil)
         attendeesTblView.register(speakerNibname, forCellReuseIdentifier:   speakerCellIdentifier)
         
-        attendeesTblView.estimatedRowHeight(100)
+        attendeesTblView.estimatedRowHeight(105)
         attendeesTblView.delegate = self
         attendeesTblView.dataSource = self
     }
@@ -49,7 +49,7 @@ class AttendeesCell: UITableViewCell {
 extension AttendeesCell: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 15
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
